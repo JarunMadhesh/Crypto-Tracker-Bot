@@ -35,4 +35,34 @@ sendgrid - to send mail<br>
      Get the image id of krypto bot 1.0
      - docker run <image-id>
 
-  
+
+## To run and check the implementation
+
+1. using endpoint create user, create a user<br>
+[POST] "/users/create" <br>
+{<br>
+    "name" : "admin",<br>
+    "password": "admin",<br>
+    "admin" : "True"<br>
+}<br><br>
+<br>
+2. Login<br>
+Basic Auth<br>
+{<br>
+		username : “admin”,<br>
+		password : “admin”<br>
+}<br>
+
+3. Create an alert with the following request<br>
+header: <br>
+{x-access-token : < user-token >}<br>
+body:<br>
+{<br>
+    "desc" : "New alert to check",<br>
+    "alert_name" : "okb",<br>
+    "alert_on" : "current_price",<br>
+    "mail_to" : "< yourmailid >@gmail.com",<br>
+    "threshold" : 30<br>
+}<br>
+<br>
+4. You will get a mail to the given email id
