@@ -8,7 +8,7 @@ The application should send an email to the user when the price of BTC reaches 3
 Similarly, say, the current price of BTC is 35,000, a user sets an alert for BTC at a price of
 33,000. The application should send an email when the price of BTC reaches 33,000.
 
-### Deltailed documentation available in documentation.docx
+### Deltailed documentation available in documentation.pdf
 
 ## Database used
 PostGre SQL
