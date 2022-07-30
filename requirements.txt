@@ -1,0 +1,11 @@
+flask
+psycopg2
+pyjwt
+uuid
+requests
+werkzeug
+redis
+rq
+flask_apscheduler
+flask_sqlalchemy
+sendgrid
