@@ -77,10 +77,7 @@ def token_required(f):
 
 
 @app.route("/user/create", methods = ["POST"])
-@token_required
-def create_user(current_user):
-    if not current_user.admin:
-        return jsonify({"message": "User doesn't have permission"})
+def create_user():
     
     data = request.get_json()
 
@@ -138,26 +135,11 @@ def get_user(current_user, user_id):
 
 
 
-# @app.route("/user/delete/<user_id>", methods = ["DELETE"])
-# def delete_user(user_id):
-#     conn = get_db_connection()
-#     cur = conn.cursor()
-#     cur.execute('''DELETE FROM users where name = "Leo Tolstoy"''')
-#     conn.commit()
-#     return jsonify({"message": "Table deleted"})
-
 #
 #
 #
 #
 #
-#
-#
-#
-#
-#
-
-
 
 @app.route("/alerts/create", methods = ["POST"])
 @token_required
