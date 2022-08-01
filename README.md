@@ -1,10 +1,12 @@
-# Krypto-bot
-Application Overview
-Create a price alert application that triggers an email when the user’s target price is
-achieved.
+# Crypto Tracker Bot
+
+## Application Overview
+
+Created a price alert application backend that triggers an email when the user’s target price is
+achieved using Python and Flask.
 
 Say, the current price of BTC is 28,000, a user sets an alert for BTC at a price of 33,000.
-The application should send an email to the user when the price of BTC reaches 33,000.
+The application sends an email to the user when the price of BTC reaches 33,000.
 Similarly, say, the current price of BTC is 35,000, a user sets an alert for BTC at a price of
 33,000. The application should send an email when the price of BTC reaches 33,000.
 
@@ -12,6 +14,7 @@ Similarly, say, the current price of BTC is 35,000, a user sets an alert for BTC
 
 ## Database used
 PostGre SQL
+
 
 ## Libraries used
 flask - Hosting <br>
